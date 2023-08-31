@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .dialog-container {
+    width: 100%;
+    /* height: 100%; */
+    padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dialog {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    max-width: 1632px;
+    width: 100%;
+    border-radius: 8px;
+    /* height: 900px; */
+    max-height: 800px;
+  }
+
+  .left-div {
+    width: 900px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 400px; */ */
+  }
+
+  .right-div {
+    flex-grow: 1;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    /* height: 100%; */
+  }
+
+  /* Breakpoint for changing dialog padding */
+  @media (max-width: 1679px) {
+    .dialog {
+      padding: 16px;
+    }
+  }
+   /* Breakpoint for changing BODY padding */
+  @media (max-width: 1280px) {
+    .dialog-container {
+      padding: 8px;
+    }
+  }
+
+</style>
+</head>
+<body>
+  <div class="dialog-container">
+    <div class="dialog">
+      <div class="left-div">
+        <!-- Content for the left div goes here -->
+        <p>Requirements div with fixed width value</p>
+      </div>
+      <div class="right-div">
+        <!-- Content for the right div goes here -->
+        <p>Grades div with width of 100%.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
